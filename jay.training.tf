@@ -14,3 +14,4 @@ resource "digitalocean_droplet" "jay_training" {
   ssh_keys    = [digitalocean_ssh_key.jay_training.fingerprint]
   tags        = concat([for key, value in local.default_tags : "${key}:${value}"])
 }
+//
